@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header{display: flex;
+        justify-content:center;
+        gap:20px;}
+        a{text-decoration: none;color: black;}
+        .intro{display:flex; 
+        justify-content: space-between;gap:30px;
+        max-width: 1090px;
+        margin: auto;}
+        .intro-text{max-width: 500px;}
+        *{
+            color:white;
+        }
+        .menu{
+            max-width: 1640px;
+            display: flex;
+            justify-content: space-between;
+            margin: 30px;
+        }
+        html{
+            background: #1b485a;
+        }
+        a{
+            text-decoration: 0;
+            color: white;
+        }
+        .nav{display:flex; gap:40px;}
+        .media-icon{width:40px;}
+        .intro{
+            max-width: 1090px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin:auto;
+            padding: 10px;
+             }
+             .profile-photo{
+                width: 300px;
+                border-radius: 50%;
+             }
+             .contacts{
+                height: 40px;
+                border: 1px solid rgba(99, 19, 75, 0.5);
+border-radius: 16px;
+             }
+             .project{
+                max-width: 320px;
+                border: 1px solid rgba(69, 97, 114, 0.5);
+border-radius: 16px;
+padding: 20px;  }
+.project-image{width: 320px; border-radius: 16px;
+}
+.portfolio{
+    display: flex;
+    justify-content: space-around;
+
+}
+h1::before {  
+  transform: scaleX(0);
+  transform-origin: bottom right;
+}
+
+h1:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+h1::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  inset: 0 0 0 0;
+  background: hsl(200 100% 80%);
+  z-index: -1;
+  transition: transform .3s ease;
+}
+
+h1 {
+  position: relative;
+  font-size: 30px;
+}
+
+
+@media (orientation: landscape) {
+  body {
+    grid-auto-flow: column;
+  }
+}
+.whatsapp{background: rgb(72, 100, 143);padding:10px 25px;border: 0;}
+
+
+@-webkit-keyframes {
+}
+@-webkit-keyframes extend {
+    0% {
+        width: 200px;
+        height: 50px;
+        border-radius: 50px;
+        } 10% {
+        width: 200px;
+        height: 60px;
+        background: #fff;
+        margin-left: - 5px;
+        margin-top: - 5px;
+        } 20% {
+        width: 200px;
+        height: 100px;
+        background: #6fb07f;
+        margin-left: 0px;
+        margin-top: 0px;
+        } 100% {
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+        margin-left: 80px;
+        background: #6fb07f;
+        }
+    }
+@keyframes extend {
+    0% {
+        width: 100px;
+        height: 50px;
+        border-radius: 100px;
+        } 10% {
+        width: 200px;
+        height: 50px;
+        background: #fff;
+        margin-left: - 5px;
+        margin-top: - 5px;
+        } 20% {
+        width: 200px;
+        height: 50px;
+        background: #6fb07f;
+        margin-left: 0px;
+        margin-top: 0px;
+        } 100% {
+        width: 100px;
+        height: 50px;
+        border-radius: 70px;
+        margin-left: 50px;
+        background: #6fb07f;
+        }
+    }
+@-webkit-keyframes {
+}
+@-webkit-keyframes disappear {
+    0% {
+        opacity: 0;
+        } 20% {
+        color: #fff;
+        } 100% {
+        opacity: 1;
+        }
+    }
+@keyframes disappear {
+    0% {
+        opacity: 0;
+        } 20% {
+        color: #fff;
+        } 100% {
+        opacity: 1;
+        }
+    }
+@-webkit-keyframes {
+}
+@-webkit-keyframes appear {
+    0% {
+        opacity: 0;
+        } 70% {
+        opacity: 0;
+        } 100% {
+        opacity: 1;
+        }
+    }
+@keyframes appear {
+    0% {
+        opacity: 0;
+        } 70% {
+        opacity: 0;
+        } 100% {
+        opacity: 1;
+        }
+    }
+
+
+input, button, submit {
+    border: none
+    }
+
+.cont {
+    position: absolute;
+    width: 100px;
+    height: 10px;
+    left: 50%;
+    top: 50%;
+    margin: -50px 0 0 -150px
+    }
+
+button {
+    border-width: 1px;
+    width: 40pxpx;
+    height: 50pxpx;
+    /border-radius/
+    border-radius: 50px;
+    background: #fff;
+    position: absolute;
+    border: 5px solid #6fb07f
+    }
+
+button > span {
+    font-size: 15px;
+    color: #6fb07f
+    }
+
+img {
+    
+    margin: auto;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    
+    }
+
+button:focus {
+    /animation/
+    -webkit-animation: extend 1s ease-in-out;
+    -ms-animation: extend 1s ease-in-out;
+    animation: extend 1s ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    /* Chrome, Safari, Opera */
+    animation-fill-mode: forwards
+    }
+
+button:focus > span {
+    /animation/
+    -webkit-animation: disappear 1s ease-in-out;
+    -ms-animation: disappear 1s ease-in-out;
+    animation: disappear 1s ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    /* Chrome, Safari, Opera */
+    animation-fill-mode: forwards
+    }
+
+button:focus > img {
+    /animation/
+    -webkit-animation: appear 1s ease-in-out;
+    -ms-animation: appear 1s ease-in-out;
+    animation: appear 1s ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    /* Chrome, Safari, Opera */
+    animation-fill-mode: forwards
+    }
+
+
+   </style>
+  </head>
+   <body>
+    <div class="header">
+        <a href="class" class="menu">Home</a>
+        <a href="https://www.instagram.com/seide_aibekova" class="menu">Instagram</a>
+        <a href="https://www.behance.com/seideaibekova" class="menu">Behance</a>
+
+    </div>
+    <div class="intro">
+    <div class="intro-text">
+        <h1>Aibekova Seide</h1>
+        <h3>Designer, programmer, artist</h3>
+        <p>Hello, I'm Aibekova Seide. 
+        I draw illustrations and do graphic designs. To check my works look at my behance account.</p>
+        <a href="https://wa.me/+996500969682"><button class="whatsapp">connect me via WhatsApp</button></a>
+    </div>
+<div>
+        <img src="https://cdn.myanimelist.net/images/anime/5/14728.jpg">
+    </div>
+    </div>
+    <h2 class="header">Portfolio</h2>
+    <div class="portfolio">
+        <div class="project">
+            <h3>First project</h3>
+            <p>This project was made for typography company. Illustrator was used to make this effect</p>
+            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/f/fe/SayonaraZetsubouSensei_vol1_Cover.jpg/220px-SayonaraZetsubouSensei_vol1_Cover.jpg" alt="" class="project-image">
+
+        </div>
+        <div class="project">
+            <h3>Second project</h3>
+            <p>This project was made for typography company. Illustrator was used to make this effect</p>
+            <img src="https://i0.wp.com/public.bay.livefilestore.com/y1pkZP605ZgoLjX30JiUUNU3y_RqCMFEdzMFC_7OaIc94EjJ3wjio2b-cfA-Ezy1vM9v4-osxyypfnS8-4Om1y8uQ/%5BRaws-4U%5D%20Zan%20Sayonara%20Zetsubou%20Sensei%20-%2001%20(TVK%201280x720%20H.264%20AAC)%20main%20male%20protagonist.jpg?w=627" alt="" class="project-image">
+
+        </div>
+        <div class="project"><h3>Third project</h3>
+            <p>This project was made for typography company. Illustrator was used to make this effect</p>
+            <img src="https://kodansha.us/wp-content/uploads/2020/12/SayonaraZetsubousensei_Series_IMG_1200x960-1024x819.jpg" alt="" class="project-image"></div>
+
+    </div>
+   
+</body>
+</html>
+    
+</body>
+</html>
